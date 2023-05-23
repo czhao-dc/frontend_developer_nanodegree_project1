@@ -1,8 +1,13 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
 .header {
     display:grid;
     grid-template-columns: 1.5fr 1fr;
     align-items: center;
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
+    background-color: #333;
+
 
     }
   .nav {
@@ -11,6 +16,89 @@
         grid-template-columns: auto auto auto auto;
         grid-gap:10px;
         align-items: center;
-        border: 2px solid red;
+        /* border: 2px solid red; */
 
+    }
+   .nav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    display: block;
+
+   }
+   .nav a:hover {
+    background-color: #ddd;
+    color: black;
+
+   }
+  .hero {
+        min-height: 50vh;
+        display:grid;
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+        border: 2px solid yellow;
+        background-color: #ADB9D3;
+
+    }
+  .main-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content:space-between;
+        padding: 0 5vw 0 5vw;
+        border: 2px solid red;
+        background-color: #EDF0F5        ;
+        }
+  .main-content section {
+            min-width: 70%;
+            width: calc((48em - 100%) * 1000);
+            max-width: 100%;
+            /* background-color: #ddd; */
+            }
+
+  .main-content aside {
+                min-width: 25%;
+                width: calc((48em - 100%) * 1000);
+                max-width: 100%;
+                border: 2px solid pink;
+
+                }
+
+   .card-list {
+                    display:grid;
+                    grid-gap: 10px;
+                    grid-template-columns: repeat(auto-fit, 
+                    minmax(300px , 1fr));
+                    }
+                    
+   .card {
+        display: grid;
+        grid-template-columns:	1fr;
+         }
+
+         .card-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            }
+            
+            .card-details a {
+            align-self: flex-start;
+            }
+
+
+.footer {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: column;
+    align-items: center;
+    background-color: #f1f1f1;
+    }
+                
+.social {
+    justify-self: end;
     }
