@@ -132,7 +132,7 @@
         margin-bottom: 5px;
     }
 }
-.card-img-details p {
+.card-img-details figcaption {
     display: flex;
     justify-content: center;
 }
